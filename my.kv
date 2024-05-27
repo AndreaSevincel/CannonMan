@@ -1,0 +1,28 @@
+<Myapp>
+    canvas.before:
+        Rectangle:
+            size: self.size
+            pos: self.pos
+            source: "background.jpg"
+    MenuScreen:
+        id: name
+        name: "home"
+    Game:
+        id: name
+        name: "game"
+    
+
+
+<MenuScreen>:
+    BoxLayout:
+        Button:
+            text: "I'M READY."
+            font_size: 72
+            size_hint_y : None
+            height: 100
+            size_hint_x: None 
+            width: 600
+            on_release:
+                root.manager.current = 'game'
+
+            
